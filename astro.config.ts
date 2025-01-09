@@ -8,7 +8,9 @@ import { SITE } from "./src/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: SITE.website,
+  site: "https://marmarmar.online",
+  base: "/blog/",
+  trailingSlash: "ignore",
   integrations: [
     tailwind({
       applyBaseStyles: false,
